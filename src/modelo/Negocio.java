@@ -5,7 +5,12 @@ package modelo;
  */
 public class Negocio {
 
-    public Negocio() {
+    // singleton
+    private static final Negocio negocio = new Negocio();
+
+    public static Negocio getInstance() { return negocio; }
+
+    private Negocio() {
 
     }
 

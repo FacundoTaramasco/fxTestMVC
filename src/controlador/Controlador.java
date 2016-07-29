@@ -14,7 +14,7 @@ public class Controlador implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        modelo = new Negocio();
+        modelo = Negocio.getInstance();
     }
 
 
